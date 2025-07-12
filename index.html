@@ -9,24 +9,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <!-- Fontaewsome cdn-->
+    <!-- FontAewsome cdn-->
     <script src="https://kit.fontawesome.com/f7ec67984a.js" crossorigin="anonymous"></script>
     <!-- Tailwind Css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#da373d',
-                    }
-                }
-            }
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
         }
-    </script>
+    </style>
 </head>
 
-<body>
+<body class="font-manrope">
     <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
         <!-- Header Section -->
         <header class="md:flex pt-10 mb-24">
@@ -273,7 +270,8 @@
                     <div>
                         <input class="border-b text-gray-400 mt-5 w-4/6" type="email" name="" id=""
                             placeholder="Email Address">
-                        <i class="fa-solid fa-chevron-right ml-3 bg-orange-600 p-2 rounded-full inline-flex text-white justify-center items-center"></i>
+                        <i
+                            class="fa-solid fa-chevron-right ml-3 bg-orange-600 p-2 rounded-full inline-flex text-white justify-center items-center"></i>
                     </div>
                     <div class="flex justify-center w-2/5 mb-2 mt-8 gap-5">
                         <i class="fa-brands fa-facebook"></i>
